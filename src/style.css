@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@import "tailwindcss";
+
+/* globals.css / style.css */
+@import "tailwindcss";
+
+@theme {
+  --color-site-blue:     #0071e3;
+  --color-site-blue-alt: #007aff;
+  --color-site-purple:   #af52de;
+  --color-site-dark:     #1d1d1f;
+  --color-site-gray:     #6e6e73;
+
+  --background-image-hero-mesh:
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(0,113,227,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(120,80,255,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 70% at 60% 80%, rgba(0,200,160,0.12) 0%, transparent 55%);
+
+  --background-image-wesen-bg:
+    radial-gradient(ellipse 70% 60% at 30% 50%, rgba(0,122,255,0.3) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 70% 50%, rgba(175,82,222,0.25) 0%, transparent 60%);
+
+  --radius-section: 28px;
+
+  --animate-field-line:  fieldLine 3s ease-in-out infinite;
+  --animate-magnet-pull: magnetPull 3s ease-in-out infinite;
+  --animate-magnet-push: magnetPush 3s ease-in-out infinite;
+
+  @keyframes fieldLine {
+    0%, 100% { stroke-dashoffset: 200; }
+    50%       { stroke-dashoffset: 0; }
+  }
+  @keyframes magnetPull {
+    0%, 100% { transform: translateX(0); }
+    50%       { transform: translateX(-10px); }
+  }
+  @keyframes magnetPush {
+    0%, 100% { transform: translateX(0); }
+    50%   
+        { transform: translateX(10px); }
+  }
+
+  /* Deine Text-Animation hinzufügen */
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+/* --- SCROLL-REVEAL EFFEKT (APPLE-STYLE) --- */
+
+/* Diese Klasse klebst du an alle Elemente, die beim Scrollen erscheinen sollen */
+.reveal {
+  opacity: 0; /* Start-Zustand: Unsichtbar */
+  transform: translateY(30px); /* Start-Zustand: Etwas nach unten versetzt */
+  
+  /* Die magische Scroll-Timeline */
+  view-timeline-name: --revealing-item;
+  view-timeline-axis: block;
+
+  /* Die Animation definieren */
+  animation: reveal-fade-in-up linear both;
+  animation-timeline: --revealing-item;
+  
+  /* WICHTIG: Wann die Animation startet und endet */
+  /* Startet, wenn das Element zu 15% im Bild ist (entry 15%)
+     und ist fertig, wenn es zu 40% drin ist (cover 40%) */
+  animation-range: entry 15% cover 40%;
+}
+
+/* Die Keyframes für diese spezifische Scroll-Animation */
+@keyframes reveal-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
