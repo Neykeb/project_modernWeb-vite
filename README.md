@@ -1,6 +1,6 @@
 # Das Gesetz der Anziehung – Manifestiere dein Traumleben
 
-> *„Was du glaubst, erschaffst du."*
+> _„Was du glaubst, erschaffst du."_
 
 Eine moderne, interaktive Web-Erfahrung über das universelle Gesetz der Anziehung – basierend auf Rhonda Byrnes bahnbrechendem Werk **„The Secret"**.
 
@@ -11,6 +11,7 @@ Eine moderne, interaktive Web-Erfahrung über das universelle Gesetz der Anziehu
 Diese Website ist kein gewöhnlicher Blog. Sie ist ein **Resonanzraum** für alle, die das Gesetz der Anziehung nicht als Trend, sondern als universelle Physik verstehen wollen.
 
 Wir destillieren die Weisheit von Giganten wie:
+
 - **Neville Goddard**
 - **Wayne Dyer**
 - **Deepak Chopra**
@@ -24,12 +25,15 @@ Wir destillieren die Weisheit von Giganten wie:
 ## 🎯 Die 3 Kernprinzipien
 
 ### 1️⃣ **Frag** – Bitte das Universum
+
 Werde dir absolut klar darüber, was du willst. Denke, schreibe, visualisiere es so präzise wie möglich. Das Universum ist ein Katalog — du musst nur bestellen.
 
 ### 2️⃣ **Glaube** – Vertraue dem Empfang
+
 Handle, denke und fühle so, als hättest du es bereits erhalten. Zweifel blockieren — Vertrauen öffnet den Kanal.
 
 ### 3️⃣ **Empfange** – Öffne dich für die Fülle
+
 Öffne dich für das Empfangen. Fühle die Freude, als wäre dein Wunsch bereits erfüllt. Das gute Gefühl ist das Signal, das du sendest.
 
 ---
@@ -37,7 +41,8 @@ Handle, denke und fühle so, als hättest du es bereits erhalten. Zweifel blocki
 ## 🚀 Schnellstart
 
 ### Voraussetzungen
-- Node.js 16+ 
+
+- Node.js 16+
 - npm oder yarn
 
 ### Installation
@@ -87,12 +92,14 @@ project_modernWeb-vite/
 ## 🎨 Design & Technologie
 
 ### Frontend-Stack
+
 - **HTML5** – Semantische Struktur
 - **Tailwind CSS** – Utility-First Styling
 - **Vite** – Blitzschneller Build & Dev Server
 - **Vanilla JavaScript** – Keine Abhängigkeiten nötig
 
 ### Design-Philosophie
+
 - Modern, dunkel, spirituell
 - Glassmorphismus & Frosted Glass UI
 - Responsive Design (Mobile-First)
@@ -103,36 +110,40 @@ project_modernWeb-vite/
 
 ## 📖 Seitenstruktur
 
-| Sektion | Inhalt | Zweck |
-|---------|--------|-------|
-| **Hero** | Hauptüberschrift + Einführung | Emotionaler Impact |
-| **Das Geheimnis** | Kern-Definition | Verständnis |
-| **Die 3 Schritte** | Frag → Glaube → Empfange | Umsetzung |
-| **Prinzipien** | 6 universelle Gesetze | Tieferes Lernen |
-| **Tagesritual** | Morgens, tagsüber, abends | Praktische Anwendung |
-| **Über uns** | Mission & Werte | Glaubwürdigkeit |
-| **Footer** | Links & Copyright | Navigation |
+| Sektion            | Inhalt                        | Zweck                |
+| ------------------ | ----------------------------- | -------------------- |
+| **Hero**           | Hauptüberschrift + Einführung | Emotionaler Impact   |
+| **Das Geheimnis**  | Kern-Definition               | Verständnis          |
+| **Die 3 Schritte** | Frag → Glaube → Empfange      | Umsetzung            |
+| **Prinzipien**     | 6 universelle Gesetze         | Tieferes Lernen      |
+| **Tagesritual**    | Morgens, tagsüber, abends     | Praktische Anwendung |
+| **Über uns**       | Mission & Werte               | Glaubwürdigkeit      |
+| **Footer**         | Links & Copyright             | Navigation           |
 
 ---
 
 ## ✨ Key Features
 
 ✅ **SEO-optimiert**
+
 - Strukturierte Heading-Hierarchie (H1-H3)
 - Meta-Tags für Social Sharing (Open Graph, Twitter Card)
 - Semantisches HTML5
 
 ✅ **Performance**
+
 - Vite für ultraschnelle Build-Zeiten
 - Optimierte Image-Assets
 - Minimal JavaScript (nur Mobile-Menü)
 
 ✅ **Accessibility**
+
 - ARIA-Labels für Landmarks
 - Semantische HTML-Struktur
 - Keyboard-navigierbar
 
 ✅ **Mobile-Responsive**
+
 - Responsive Grid-Layouts
 - Touch-friendly Buttons
 - Optimiert für alle Bildschirmgrößen
@@ -142,14 +153,18 @@ project_modernWeb-vite/
 ## 🔧 Entwicklung
 
 ### Mobile-Menü
+
 Das responsive Menü wird durch `src/main.js` gesteuert:
+
 ```javascript
 Menu öffnen/schließen beim Klick auf Hamburger-Icon
 Animationen durch Tailwind-Klassen
 ```
 
 ### Styling erweitern
+
 Tailwind-Konfiguration ist im `vite.config.js`:
+
 ```javascript
 // Custom CSS-Variablen verfügbar:
 --color-site-blue: #0071e3
@@ -179,6 +194,7 @@ Ideen & Verbesserungen sind willkommen!
 5. Pull Request öffnen
 
 ### Coding-Standards
+
 - Saubere, semantische HTML-Struktur
 - Tailwind-Klassen konsistent halten
 - Mobile-First responsive Design
@@ -205,7 +221,7 @@ Erstellt von **DCI-Student** | März 2026
 
 ## 🌍 Philosophie dieser Website
 
-> *„Wir sind keine menschlichen Wesen, die eine spirituelle Erfahrung machen, sondern spirituelle Wesen, die eine menschliche Erfahrung machen."*
+> _„Wir sind keine menschlichen Wesen, die eine spirituelle Erfahrung machen, sondern spirituelle Wesen, die eine menschliche Erfahrung machen."_
 
 Diese Seite ist kein Produkt zum Verkaufen. Sie ist ein **freier Resonanzraum**, um die universellen Gesetze des Bewusstseins praktisch zu verstehen und anzuwenden.
 
@@ -216,7 +232,7 @@ Unser Ziel: **Du wirst zum Schöpfer deiner Realität.**
 ## 📚 Weiterführende Ressourcen
 
 - 📖 „The Secret" – Rhonda Byrne
-- 📖 „The Power of Now" – Eckhart Tolle  
+- 📖 „The Power of Now" – Eckhart Tolle
 - 📖 „The Law of Attraction" – Neville Goddard
 - 🎬 „The Secret" Dokumentention (Netflix)
 
@@ -226,4 +242,4 @@ Unser Ziel: **Du wirst zum Schöpfer deiner Realität.**
 
 ---
 
-*Zuletzt aktualisiert: 30. März 2026*
+_Zuletzt aktualisiert: 30. März 2026_
