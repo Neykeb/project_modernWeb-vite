@@ -1,4 +1,4 @@
-const CACHE_NAME = "grillhouse-v1"; // durch deinen App-Namen und deine Version ersetzen
+const CACHE_NAME = "the_secretv1"; // durch deinen App-Namen und deine Version ersetzen
 const ASSETS_TO_CACHE = ["/", "/index.html", "/src/style.css"];
 
 self.addEventListener("install", (event) => {
