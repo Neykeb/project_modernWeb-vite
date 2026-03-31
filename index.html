@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./src/style.css">
-  
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
+
   <link rel="manifest" href="/site.webmanifest">
-  
+
   <link rel="canonical" href="https://celebrated-cuchufli-cc0297.netlify.app/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  
+
   <meta property="og:title" content="Das Gesetz der Anziehung: Deine Gedanken erschaffen Realität">
   <meta property="og:description"
     content="Entdecke die Geheimnisse der Manifestation. Nutze das universelle Gesetz der Anziehung, um deine tiefsten Wünsche wahr werden zu lassen.">
   <meta property="og:image" content="/og-image.png">
   <meta property="og:url" content="https://celebrated-cuchufli-cc0297.netlify.app/">
-  
+
   <meta name="twitter:title" content="Das Gesetz der Anziehung | Manifestation Guide">
   <meta name="twitter:description"
     content="Meistere die Kunst des Manifestierens und verändere dein Leben mit der Kraft deiner Gedanken.">
-  
+
   <title>Das Gesetz der Anziehung | Manifestiere dein Traumleben</title>
   <meta name="description"
     content="Lerne, wie du mit der Kraft deiner Gedanken und dem Gesetz der Anziehung Fülle, Liebe und Erfolg in dein Leben ziehst. Beginne jetzt deine Reise.">
@@ -31,22 +31,27 @@
 
 <body class="bg-[#0a0a0a] min-h-screen antialiased text-black ">
 
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
   <header role="banner">
     <nav role="navigation" aria-label="Hauptnavigation"
-      class="fixed top-0 w-full z-15 bg-white/30 backdrop-blur-lg border-b border-gray-200/30 ">
+      class="fixed top-0 w-full z-15 bg-black/60 backdrop-blur-lg border-b border-gray-200/30 ">
       <div class="max-w-7xl mx-auto px-6 h-12 md:h-14 flex items-center justify-between">
-        <a href="#" class="text-xl font-semibold tracking-tighter transition-opacity hover:opacity-70"><img
-            src="./src/logoTheSecret.svg" alt="Logo" class="w-15 inline-block mr-2">
+        <!-- Logo & Branding -->
+        <a href="#" class="text-xl font-semibold tracking-tighter transition-opacity hover:opacity-70">
+          <img src="./src/logoTheSecret.svg" alt="Logo" class="w-15 inline-block mr-2">
         </a>
-        <div
-          class="hidden md:flex items-center space-x-8 text-[12px] font-medium text-gray-400 uppercase tracking-widest">
-          <a href="#wesen" class="hover:text-black transition-colors">Wesen</a>
-          <a href="#projects" class="hover:text-black transition-colors">Prinzipien</a>
-          <a href="#contact" class="hover:text-black transition-colors">Prozess</a>
-          <a href="#contact" class="hover:text-black transition-colors">Praktiken</a>
-          <a href="#contact" class="hover:text-black transition-colors">Alltag</a>
-          <a href="#contact" class="hover:text-black transition-colors">Das Geheimnis</a>
+        <!-- Hauptnavigation (Desktop) -->
+        <div class="hidden md:flex items-center space-x-8 text-[12px] font-medium text-white uppercase tracking-widest">
+          <a href="#das_geheimnis" class="hover:text-gray-300 transition-colors">Das Geheimnis</a>
+          <a href="#wesen" class="hover:text-gray-300 transition-colors">Wesen</a>
+          <a href="#prinzipien" class="hover:text-gray-300 transition-colors">Prinzipien</a>
+          <a href="#hindernisse" class="hover:text-gray-300 transition-colors">Hindernisse</a>
+          <a href="#prozess" class="hover:text-gray-300 transition-colors">Praktiken</a>
+          <a href="#fundament" class="hover:text-gray-300 transition-colors">Über uns</a>
         </div>
+        <!-- Hamburger Menü Button (Mobile) -->
         <button role="button" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
           aria-label="Hauptmenu öffnen" class="md:hidden p-2 text-gray-600 focus:outline-none">
           <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,22 +60,28 @@
           </svg>
         </button>
       </div>
+      <!-- Hauptnavigation (Mobile) -->
       <div id="mobile-menu" role="menu" aria-hidden="true"
-        class="invisible opacity-0 -translate-y-4 transition-all duration-500 ease-in-out md:hidden absolute top-12 left-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 flex flex-col p-8 space-y-6 text-xl font-semibold shadow-2xl">
-        <a href="#about" class="hover:text-black transition-colors">Wesen</a>
-        <a href="#projects" class="hover:text-black transition-colors">Prinzipien</a>
-        <a href="#contact" class="hover:text-black transition-colors">Prozess</a>
-        <a href="#contact" class="hover:text-black transition-colors">Praktiken</a>
-        <a href="#contact" class="hover:text-black transition-colors">Alltag</a>
-        <a href="#contact" class="hover:text-black transition-colors">Das Geheimnis</a>
+        class="invisible opacity-0 -translate-y-4 transition-all duration-800 ease-in-out md:hidden absolute top-12 left-0 w-full bg-black/90 backdrop-blur-xl border-b border-gray-100 flex flex-col p-8 space-y-6 text-xl font-semibold shadow-2xl">
+        <a href="#das_geheimnis" class="hover:text-white transition-colors">Das Geheimnis</a>
+        <a href="#wesen" class="hover:text-white transition-colors">Wesen</a>
+        <a href="#prinzipien" class="hover:text-white transition-colors">Prinzipien</a>
+        <a href="#hindernisse" class="hover:text-white transition-colors">Hindernisse</a>
+        <a href="#prozess" class="hover:text-white transition-colors">Praktiken</a>
+        <a href="#fundament" class="hover:text-white transition-colors">Über uns</a>
       </div>
     </nav>
   </header>
 
+  <!-- ============================================================
+       HERO SECTION - Haupteinstieg mit inspirierendem Text
+       ============================================================ -->
   <section role="region" aria-label="Hauptinhalt"
     class="relative overflow-hidden min-h-screen flex justify-center items-center w-full">
+    <!-- Hero Hintergrund Bild -->
     <img aria-hidden="true" src="./src/universe.jpg" alt="Galayxy" class="absolute inset-0 w-full h-full object-cover">
-    <!-- Hintergrund dunkel machen -->
+
+    <!-- Hintergrund Overlay (Dunkelheit) -->
     <div class="absolute inset-0 bg-black/40 "></div>
 
 
@@ -114,10 +125,13 @@
     </article>
   </section>
 
+  <!-- ============================================================
+       DAS GEHEIMNIS - Zentrale Definition & Hook
+       ============================================================ -->
   <div id="das_geheimnis"
-    class="relative bg-[#030303] color-white py-20 md:py-32 mx-auto px-6 font-medium text-white leading-tight tracking-tight ">
+    class="relative bg-white text-black py-20 md:py-32 mx-auto px-6 md:px-20 font-medium leading-tight tracking-tight ">
     <p class="font-serif italic text-2xl md:text-4xl md:w-1/2 ">
-      <span class="absolute color-gray-500 font-black opacity-5 top-20">
+      <span class="absolute color-gray-500 font-black opacity-20  top-20">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote inline-block size-12">
           <path
@@ -128,20 +142,23 @@
       </span>Das Geheimnis ist <span class="text-[#0071E3]">das Gesetz der Anziehung</span> — die mächtigste Kraft im
       gesamten Universum.
     </p>
-    <h6 class="text-sm font-thin text-gray-500 mt-4 uppercase ">— Rhonda Byrne, the secret</h6>
+    <h6 class="text-sm font-thin text-gray-800 mt-4 uppercase ">— Rhonda Byrne, the secret</h6>
   </div>
 
-
-  <!-- new section 1-->
+  <!-- ============================================================
+       DIE 3 SCHRITTE - Das Manifest-Prozess
+       Schritt 1: Frag (Ask)
+       ============================================================ -->
   <section class="bg-[#fff] text-[#d6d6d8] py-20 px-6">
     <div class="max-w-7xl mx-auto flex flex-col gap-10">
       <!-- skindrak -->
-      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-500 hover:border-neutral-700/50
+      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-800 hover:border-neutral-700/50
                   flex flex-col md:flex-row items-stretch min-h-[500px] md:min-h-[600px]">
 
         <div class="w-full md:w-2/3 p-10 md:p-14 flex flex-col justify-between items-start">
 
           <div>
+            <!-- Schritt 1 Nummering & Label -->
             <div class="flex items-center gap-4 mb-8">
               <span
                 class="text-7xl font-bold font-serif bg-gradient-to-br from-[#0071E3] to-black text-transparent bg-clip-text">
@@ -192,11 +209,13 @@
     </div>
   </section>
 
-  <!-- section 2 -->
+  <!-- ============================================================
+       DIE 3 SCHRITTE - Schritt 2: Glaube (Believe)
+       ============================================================ -->
   <section class="bg-[#fff] text-[#d6d6d8] py-20 px-6">
     <div class="max-w-7xl mx-auto flex flex-col gap-10">
       <!-- skindrak -->
-      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-500 hover:border-neutral-700/50
+      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-800 hover:border-neutral-700/50
                 flex flex-col md:flex-row items-stretch min-h-[500px] md:min-h-[600px]">
         <div class="relative w-full md:flex-1 overflow-hidden min-h-[350px]">
           <img src="./src/believe.png" alt="Glaube und Vertrauen" class="w-full h-full object-cover">
@@ -206,6 +225,7 @@
         <div class="w-full md:w-2/3 p-10 md:p-14 flex flex-col justify-between items-start">
 
           <div>
+            <!-- Schritt 2 Nummering & Label -->
             <div class="flex items-center gap-4 mb-8">
               <span
                 class="text-7xl font-bold font-serif bg-gradient-to-br from-[#0071E3] to-black text-transparent bg-clip-text">
@@ -252,16 +272,19 @@
     </div>
   </section>
 
-  <!-- section 3 -->
+  <!-- ============================================================
+       DIE 3 SCHRITTE - Schritt 3: Empfange (Receive)
+       ============================================================ -->
   <section class="bg-[#fff] text-[#d6d6d8] py-20 px-6">
     <div class="max-w-7xl mx-auto flex flex-col gap-10">
 
-      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-500 hover:border-neutral-700/50
+      <div class="bg-[#000000e7] rounded-[2.5rem] border border-neutral-800/30 overflow-hidden shadow-2xl transition-all duration-800 hover:border-neutral-700/50
                   flex flex-col md:flex-row items-stretch min-h-[500px] md:min-h-[600px]">
 
         <div class="w-full md:w-2/3 p-10 md:p-14 flex flex-col justify-between items-start">
 
           <div>
+            <!-- Schritt 3 Nummering & Label -->
             <div class="flex items-center gap-4 mb-8">
               <span
                 class="text-7xl font-bold font-serif bg-gradient-to-br from-[#0071E3] to-black text-transparent bg-clip-text">
@@ -311,11 +334,14 @@
     </div>
   </section>
 
-
-
+  <!-- ============================================================
+       WAS IST DAS GESETZ DER ANZIEHUNG? - Erklärung & Infos
+       ============================================================ -->
   <section class="bg-white pt-15 md:pt-20 pb-20 md:pb-32">
+    <!-- Info-Grid: Gesetz der Anziehung + 3 Kernpunkte -->
     <div class="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto px-6 items-stretch">
 
+      <!-- Linke Seite: Gesetz-Definition -->
       <div
         class="w-full lg:w-[40%] border border-white/5 rounded-[2.5rem] p-10 flex flex-col justify-around bg-slate-200/50 animate-fade-in-up [animation-delay:200ms]">
         <div>
@@ -393,7 +419,9 @@
 
   </section>
 
-
+  <!-- ============================================================
+       DAS WESEN - Kern-Concept: "Gleiches zieht Gleiches an"
+       ============================================================ -->
   <section id="wesen" class="py-28">
     <div class="max-w-5xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -424,10 +452,10 @@
         <div
           class="rounded-section bg-site-dark aspect-square flex items-center justify-center overflow-hidden relative animate-fade-in-up [animation-delay:600ms]">
 
-          <!-- Hintergrund Glow -->
+          <!-- Hintergrund Glow Effekt -->
           <div class="absolute inset-0 bg-wesen-bg pointer-events-none"></div>
 
-          <!-- SVG -->
+          <!-- Magnet SVG Animation -->
           <svg viewBox="0 0 280 160" width="80%" height="80%" class="relative z-10">
             <defs>
               <radialGradient id="gl1" cx="30%" cy="50%">
@@ -440,11 +468,11 @@
               </radialGradient>
             </defs>
 
-            <!-- Glow-Halos -->
+            <!-- Energie-Glow Halos (Blau & Lila) -->
             <ellipse cx="70" cy="80" rx="55" ry="55" fill="url(#gl1)" />
             <ellipse cx="210" cy="80" rx="55" ry="55" fill="url(#gl2)" />
 
-            <!-- Feldlinien -->
+            <!-- Magnetische Feldlinien Animation -->
             <path d="M70,80 Q140,30 210,80" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"
               stroke-dasharray="200" class="animate-field-line [animation-delay:0s]" />
             <path d="M70,80 Q140,52 210,80" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"
@@ -456,7 +484,7 @@
             <path d="M70,80 Q140,130 210,80" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"
               stroke-dasharray="200" class="animate-field-line [animation-delay:1s]" />
 
-            <!-- Pol BLAU -->
+            <!-- Innere Frequenz Pol (Blau) - Animiert -->
             <g class="animate-magnet-pull">
               <circle cx="70" cy="80" r="22" fill="#007aff" />
               <circle cx="70" cy="80" r="22" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1" />
@@ -464,7 +492,7 @@
                 font-weight="700">+</text>
             </g>
 
-            <!-- Pol LILA -->
+            <!-- Äußere Resonanz Pol (Lila) - Animiert -->
             <g class="animate-magnet-push">
               <circle cx="210" cy="80" r="22" fill="#af52de" />
               <circle cx="210" cy="80" r="22" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1" />
@@ -472,7 +500,7 @@
                 font-weight="700">–</text>
             </g>
 
-            <!-- Labels -->
+            <!-- Pol-Beschriftungen -->
             <text x="70" y="118" text-anchor="middle" fill="rgba(255,255,255,.35)" font-size="10"
               font-family="system-ui">Innere Frequenz</text>
             <text x="210" y="118" text-anchor="middle" fill="rgba(255,255,255,.35)" font-size="10"
@@ -484,6 +512,9 @@
     </div>
   </section>
 
+  <!-- ============================================================
+       DIE UNIVERSELLEN SCHÖPFUNGSGESETZE - 6 Kernprinzipien
+       ============================================================ -->
   <section id="prinzipien" class="py-20 md:py-32 bg-[#F5F5F7]">
     <div class="max-w-2xl md:max-w-5xl mx-auto px-6 animate-fade-in-up [animation-delay:200ms] ">
 
@@ -505,10 +536,11 @@
       <!-- <div
       class="flex flex-col lg:flex-row items-stretch justify-center gap-8 md:gap-12 mt-16 mx-auto max-w-6xl px-6 md:px-12"> -->
 
+      <!-- Prinzipien Grid (6 Gesetze) -->
       <div class=" grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-16 mx-auto max-w-6xl px-6 md:px-12">
 
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">01</span>
 
@@ -522,7 +554,7 @@
         </div>
 
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">02</span>
           <div class="relative z-10">
@@ -534,7 +566,7 @@
           </div>
         </div>
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">03</span>
           <div class="relative z-10">
@@ -547,7 +579,7 @@
         </div>
 
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">04</span>
           <div class="relative z-10">
@@ -561,7 +593,7 @@
         </div>
 
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">05</span>
           <div class="relative z-10">
@@ -575,7 +607,7 @@
         </div>
 
         <div
-          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
+          class="group relative bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-800 flex flex-col justify-center min-h-[320px] text-center overflow-hidden border border-gray-100">
           <span
             class="absolute -top-4 -right-2 text-9xl font-black text-gray-500/5 select-none transition-transform group-hover:scale-110 duration-700">06</span>
           <div class="relative z-10">
@@ -591,7 +623,9 @@
     </div>
   </section>
 
-
+  <!-- ============================================================
+       INSPIRA QUOTE - Albert Einstein über Universum
+       ============================================================ -->
   <div class="bg-[#1D1D1F] w-full py-20 md:py-32">
     <div class="max-w-4xl mx-auto px-6 text-center">
 
@@ -607,21 +641,102 @@
     </div>
   </div>
 
-  <div id="prozess" class="py-20 md:py-32">
-  </div>
+  <!-- ============================================================
+       HINDERNISSE - Was blockiert deine Anziehung?
+       ============================================================ -->
+  <section id="hindernisse" class="w-full bg-white py-20 px-6">
 
-  <!-- <div class="max-w-4xl mx-auto px-6 text-center">
-      <h1 class="text-2xl md: text-4xl font-bold mb-8 md:w-1/2 mx-auto">Wie Manifestation
-        wirklich funktioniert
-      </h1>
-      <p class="mt-6 text-md md:text-lg text-gray-600 leading-relaxed md:w-2/3 mx-auto">
-        Manifestation ist kein mystischer Akt — es ist ein verständlicher Prozess aus fünf zusammenhängenden Phasen.
-    </div> -->
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-start gap-12">
+      <div class="w-full lg:w-1/2">
+        <span class="inline-block text-xs uppercase tracking-widest text-gray-400 mb-6">Hindernisse</span>
+        <h2 class="text-3xl md:text-5xl font-bold text-black mb-8 max-w-xs md:max-w-none ">
+          Was deine <br class="hidden md:block"> Anziehung <br class="hidden md:block"> blockiert.
+        </h2>
 
-  <!-- Manifestationsprozess -->
+        <!-- dropdown -->
+        <div
+          class="collapse collapse-plus shadow-md rounded-lg overflow-hidden mb-4 min-h-0 transition-all duration-800">
+          <input type="radio" name="hindernisse" class="peer" />
+          <div
+            class="collapse-title bg-[#F5F5F7] text-black font-semibold peer-checked:bg-[#181818] peer-checked:text-white">
+            01. Limitierende Glaubenssätze
+          </div>
+          <div class="collapse-content bg-[#181818] text-gray-300">
+            <p class="">
+              „Ich bin nicht gut genug", „Geld ist böse", „Das passiert nur anderen." Diese tief verankerten
+              Überzeugungen
+              senden
+              konstant eine gegenteilige Frequenz aus — ohne dass du es bemerkst.
+            </p>
+          </div>
+        </div>
 
-  <!-- Cards (anleitung zum Manifestieren) -->
-  <section class="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center px-6 py-16 md:py-10">
+        <div
+          class="collapse collapse-plus shadow-md rounded-lg overflow-hidden mb-4 min-h-0 transition-all duration-800">
+          <input type="radio" name="hindernisse" class="peer" />
+          <div
+            class="collapse-title bg-[#F5F5F7] text-black font-semibold peer-checked:bg-[#181818] peer-checked:text-white">
+            02 Fokus auf den Mangel
+          </div>
+          <div class="collapse-content bg-[#181818] text-gray-300">
+            <p class="">
+              Wer ständig über das nachdenkt, was fehlt, zieht weiteren Mangel an. Das Gesetz unterscheidet nicht
+              zwischen
+              dem, was du willst, und dem, worüber du grübelst. Der Fokus zählt — nicht die Absicht dahinter.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="collapse collapse-plus shadow-md rounded-lg overflow-hidden mb-4 min-h-0 transition-all duration-800">
+          <input type="radio" name="hindernisse" class="peer" />
+          <div
+            class="collapse-title bg-[#F5F5F7] text-black font-semibold peer-checked:bg-[#181818] peer-checked:text-white">
+            03 Zweifel & Ungeduld
+          </div>
+          <div class="collapse-content bg-[#181818] text-gray-300">
+            <p class="">
+              Anhaftung an das „Wie" und „Wann" erzeugt Widerstand. Das Vertrauen in den Prozess ist genauso
+              entscheidend
+              wie die
+              Klarheit der Intention. Ungeduld signalisiert dem Unterbewusstsein: „Ich glaube nicht wirklich daran."</p>
+          </div>
+        </div>
+
+        <div
+          class="collapse collapse-plus shadow-md rounded-lg overflow-hidden mb-4 min-h-0 transition-all duration-800">
+          <input type="radio" name="hindernisse" class="peer" />
+          <div
+            class="collapse-title bg-[#F5F5F7] text-black font-semibold peer-checked:bg-[#181818] peer-checked:text-white">
+            04 Unbewusstes Wiederholen
+          </div>
+          <div class="collapse-content bg-[#181818] text-gray-300 ">
+            <p class="">
+              95% unseres Denkens und Verhaltens ist unbewusst. Alte Muster laufen automatisch ab und erzeugen immer
+              wieder dieselben
+              Ergebnisse — solange sie nicht bewusst erkannt und neu kodiert werden.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-5/12 bg-[#1D1D1F] p-8 md:p-12 rounded-2xl text-gray-200 shadow-xl">
+        <span class="inline-block text-xs uppercase tracking-widest text-gray-400 mb-6">Schlüsselerkenntnis</span>
+        <p class="text-md md:text-xl italic leading-relaxed">
+          „Der einzige Unterschied zwischen dem Menschen, der anzieht was er will, und dem der es nicht tut: die
+          Qualität
+          seines vorherrschenden inneren Zustands.“
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       PRAKTIKEN & RITUALE - Der tägliche Prozess zum Manifestieren
+       (Morgens, Tagsüber, Abends)
+       ============================================================ -->
+  <section id="prozess" class="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center px-6 py-16 md:py-10">
 
     <div class=" bg-[#0a0a0a] flex items-center justify-center px-6 py-16">
       <div class="max-w-4xl mx-auto px-6 text-center">
@@ -634,6 +749,8 @@
         </p>
       </div>
     </div>
+
+    <!-- Tages-Rituale Karten Container -->
     <div class="flex flex-wrap justify-center gap-8 max-w-6xl">
 
       <!-- Karte 1 -->
@@ -821,9 +938,10 @@
     </div>
   </section>
 
-
-  <!-- über uns -->
-  <section class="bg-[#0a0a0a] text-white py-24 px-6 overflow-hidden">
+  <!-- ============================================================
+       ÜBER UNS - Philosophie & Mission der Website
+       ============================================================ -->
+  <section id="fundament" class="bg-[#0a0a0a] text-white py-24 px-6 overflow-hidden">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
       <div class="space-y-8">
@@ -852,12 +970,14 @@
         </div>
       </div>
 
+      <!-- Features Grid: Quanten-Logik, Zero Commerce, Geistesgiganten -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+        <!-- Glow Background -->
         <div class="absolute -inset-10 bg-[#0071E3]/10 blur-[120px] rounded-full pointer-events-none"></div>
 
         <div
-          class="group p-8 rounded-[2rem] bg-gradient-to-br from-blue-900/20 to-black border border-blue-500/20 hover:border-blue-500/50 transition-all duration-500">
-          <div class="mb-4 text-blue-400 group-hover:scale-110 transition-transform duration-500">
+          class="group p-8 rounded-[2rem] bg-gradient-to-br from-blue-900/20 to-black border border-blue-500/20 hover:border-blue-500/50 transition-all duration-800">
+          <div class="mb-4 text-blue-400 group-hover:scale-110 transition-transform duration-800">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
               stroke-width="2" class="lucide lucide-microscope">
               <path d="M6 18h8" />
@@ -874,8 +994,8 @@
         </div>
 
         <div
-          class="group p-8 rounded-[2rem] bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/20 hover:border-purple-500/50 transition-all duration-500">
-          <div class="mb-4 text-purple-400 group-hover:scale-110 transition-transform duration-500">
+          class="group p-8 rounded-[2rem] bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/20 hover:border-purple-500/50 transition-all duration-800">
+          <div class="mb-4 text-purple-400 group-hover:scale-110 transition-transform duration-800">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
               stroke-width="2" class="lucide lucide-leaf">
               <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
@@ -888,9 +1008,9 @@
         </div>
 
         <div
-          class="group md:col-span-2 p-8 rounded-[2rem] bg-gradient-to-br from-emerald-900/20 to-black border border-emerald-500/20 hover:border-emerald-500/50 transition-all duration-500 flex items-center justify-between">
+          class="group md:col-span-2 p-8 rounded-[2rem] bg-gradient-to-br from-emerald-900/20 to-black border border-emerald-500/20 hover:border-emerald-500/50 transition-all duration-800 flex items-center justify-between">
           <div class="max-w-xs">
-            <div class="mb-4 text-emerald-400 group-hover:scale-110 transition-transform duration-500">
+            <div class="mb-4 text-emerald-400 group-hover:scale-110 transition-transform duration-800">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                 stroke-width="2" class="lucide lucide-sparkles">
                 <path
@@ -926,10 +1046,11 @@
         Das Universum reagiert nicht auf das, was du willst, <br> sondern auf das, was du bist.
       </p>
 
+      <!-- Footer Navigation Links -->
       <nav aria-label="Rechtliche Information" class="flex gap-8 text-[10px] uppercase tracking-widest mb-12">
         <a href="#" class="hover:text-white transition-colors">Impressum</a>
         <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
-        <a href="#" class="hover:text-white transition-colors">Kontakt</a>
+        <a href="#fundament" class="hover:text-white transition-colors">Über uns</a>
       </nav>
 
       <div class="text-[9px] tracking-widest text-neutral-800 uppercase">
